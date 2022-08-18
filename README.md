@@ -10,12 +10,12 @@ The free LITE database is available at https://lite.ip2location.com.
 ## Installation
 
 Download the latest IP2Location Java jar file ip2location-java-x.y.z.jar from https://search.maven.org/artifact/com.ip2location/ip2location-java
+
 Download the latest IP2Location Kafka jar file ip2location-kafka-x.y.z.jar from https://search.maven.org/artifact/com.ip2location/ip2location-kafka
+
 Copy both jar files into whichever plugin folder your Kafka installation is using.
 
 Download the IP2Location BIN database file into the folder of your choice.
-
-##
 
 ## Configure your connector properties
 
@@ -38,6 +38,7 @@ transforms.insertip2location.ip2location.input=
 ## Schema
 
 |Name|Schema|
+|---|---|
 |ip2location_country_code|[String](https://kafka.apache.org/0102/javadoc/org/apache/kafka/connect/data/Schema.Type.html#STRING)|
 |ip2location_country_name|[String](https://kafka.apache.org/0102/javadoc/org/apache/kafka/connect/data/Schema.Type.html#STRING)|
 |ip2location_region|[String](https://kafka.apache.org/0102/javadoc/org/apache/kafka/connect/data/Schema.Type.html#STRING)|
