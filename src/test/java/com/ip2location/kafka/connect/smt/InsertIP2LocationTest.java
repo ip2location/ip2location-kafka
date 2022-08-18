@@ -104,7 +104,7 @@ public class InsertIP2LocationTest {
     }
 
     @Test
-    public void schemalessInsertUuidField() {
+    public void schemalessInsertIP2LocationField() {
         final Map<String, Object> props = new HashMap<>();
 
         props.put("ip2location.bin.path", binFilePath);
