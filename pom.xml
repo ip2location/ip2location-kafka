@@ -6,12 +6,12 @@
 
     <groupId>com.ip2location</groupId>
     <artifactId>ip2location-kafka</artifactId>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <kafkaconnect.version>2.3.1</kafkaconnect.version>
+        <kafkaconnect.version>3.4.0</kafkaconnect.version>
         <confluent.version>5.1.1</confluent.version>
     </properties>
 
@@ -19,7 +19,7 @@
     <description>IP2Location Kafka Transform enables applications to get info from IP address such as the visitor’s
         country, region, city, latitude, longitude, ZIP code, ISP name, domain name, time zone, connection speed, IDD
         code, area code, weather station code, weather station name, MCC, MNC, mobile brand name, elevation, usage type,
-        address type and IAB category.
+        address type, IAB category, district, autonomous system number (ASN) and autonomous system (AS).
     </description>
     <url>https://www.ip2location.com/development-libraries/ip2location/kafka</url>
     <inceptionYear>2017</inceptionYear>
@@ -82,7 +82,7 @@
         <dependency>
             <groupId>com.ip2location</groupId>
             <artifactId>ip2location-java</artifactId>
-            <version>8.9.1</version>
+            <version>8.11.1</version>
         </dependency>
     </dependencies>
 
