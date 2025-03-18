@@ -4,8 +4,8 @@ This Apache Kafka Transform provides a fast lookup of country, region, city, lat
 
 The database will be updated on a monthly basis for greater accuracy.
 
-The complete database is available at https://www.ip2location.com under Premium subscription package.
-The free LITE database is available at https://lite.ip2location.com.
+The complete database is available at <https://www.ip2location.com> under Premium subscription package.
+The free LITE database is available at <https://lite.ip2location.com>.
 
 ## Developer Documentation
 To learn more about installation, usage, and schema, please visit the developer documentation at [https://ip2location-kafka.readthedocs.io/en/latest/](https://ip2location-kafka.readthedocs.io/en/latest/).
