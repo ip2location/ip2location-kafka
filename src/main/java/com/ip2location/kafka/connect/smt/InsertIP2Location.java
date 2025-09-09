@@ -1,5 +1,5 @@
 /*
- * Copyright © 2023 IP2Location.com (support@ip2location.com)
+ * Copyright © 2025 IP2Location.com (support@ip2location.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -119,6 +119,9 @@ public abstract class InsertIP2Location<R extends ConnectRecord<R>> implements T
                 updatedValue.put(prefix + "district", rec.getDistrict());
                 updatedValue.put(prefix + "asn", rec.getASN());
                 updatedValue.put(prefix + "as", rec.getAS());
+                updatedValue.put(prefix + "as_domain", rec.getASDomain());
+                updatedValue.put(prefix + "as_usage_type", rec.getASUsageType());
+                updatedValue.put(prefix + "as_cidr", rec.getASCIDR());
             } else if ("EMPTY_IP_ADDRESS".equals(rec.getStatus())) {
                 updatedValue.put(prefix + "error", "IP address cannot be blank.");
             } else if ("INVALID_IP_ADDRESS".equals(rec.getStatus())) {
@@ -189,6 +192,9 @@ public abstract class InsertIP2Location<R extends ConnectRecord<R>> implements T
                 updatedValue.put(prefix + "district", rec.getDistrict());
                 updatedValue.put(prefix + "asn", rec.getASN());
                 updatedValue.put(prefix + "as", rec.getAS());
+                updatedValue.put(prefix + "as_domain", rec.getASDomain());
+                updatedValue.put(prefix + "as_usage_type", rec.getASUsageType());
+                updatedValue.put(prefix + "as_cidr", rec.getASCIDR());
             } else if ("EMPTY_IP_ADDRESS".equals(rec.getStatus())) {
                 updatedValue.put(prefix + "error", "IP address cannot be blank.");
             } else if ("INVALID_IP_ADDRESS".equals(rec.getStatus())) {
@@ -254,6 +260,9 @@ public abstract class InsertIP2Location<R extends ConnectRecord<R>> implements T
         builder.field(prefix + "district", Schema.STRING_SCHEMA);
         builder.field(prefix + "asn", Schema.STRING_SCHEMA);
         builder.field(prefix + "as", Schema.STRING_SCHEMA);
+        builder.field(prefix + "as_domain", Schema.STRING_SCHEMA);
+        builder.field(prefix + "as_usage_type", Schema.STRING_SCHEMA);
+        builder.field(prefix + "as_cidr", Schema.STRING_SCHEMA);
         builder.field(prefix + "error", Schema.STRING_SCHEMA);
 
         return builder.build();
